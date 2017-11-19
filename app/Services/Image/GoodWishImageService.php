@@ -2,10 +2,11 @@
 
 namespace App\Services\Image;
 
+use App\Contracts\SayYesToReneataContract;
 use App\Generators\GoodWishImageGenerator as Generator;
 use Illuminate\Support\Facades\Storage;
 
-    class GoodWishImageService
+class GoodWishImageService implements SayYesToReneataContract
 {
     /**
      * @var Generator
@@ -26,6 +27,6 @@ use Illuminate\Support\Facades\Storage;
     {
         $id = rand(1, 9);
 
-        return asset("assets/sample{$id}.png");
+        return asset("assets/sample{$id}.jpg");
     }
 }
