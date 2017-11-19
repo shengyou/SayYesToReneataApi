@@ -27,6 +27,6 @@ class GoodWishImageService implements SayYesToReneataContract
     {
         $id = rand(1, 9);
 
-        return asset("assets/sample{$id}.jpg");
+        return asset("assets/pic{$id}.jpg");
     }
 }
