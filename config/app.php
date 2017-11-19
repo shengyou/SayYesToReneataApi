@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        App\Providers\SayYesToReneataServiceProvider::class,
 
         /*
          * Application Service Providers...
